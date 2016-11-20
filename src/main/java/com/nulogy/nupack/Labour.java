@@ -15,5 +15,10 @@ public interface Labour extends Serializable {
      * @return the margin of markup
      */
     BigDecimal getMarkUp();
-
+    
+    /**
+     * Set the number of people
+     * @param people the number of people
+     */
+    void setNumberOfPeople(int people);
 }
