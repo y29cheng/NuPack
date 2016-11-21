@@ -21,4 +21,10 @@ public interface Labour extends Serializable {
      * @param people the number of people
      */
     void setNumberOfPeople(int people);
+    
+    /**
+     * Get the number of people
+     * @return the number of peoplw
+     */
+    int getNumberOfPeople();
 }

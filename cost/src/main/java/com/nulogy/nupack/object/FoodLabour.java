@@ -16,7 +16,7 @@ public class FoodLabour extends BaseLabour {
     
     @Override
     public BigDecimal getMarkUp() {
-        return BigDecimal.valueOf(0.13).add(super.getMarkUp());
+        return BigDecimal.valueOf(0.13).add(BigDecimal.valueOf(getNumberOfPeople()).multiply(BigDecimal.valueOf(0.012))).add(BigDecimal.ONE).multiply(MARKUP.add(BigDecimal.ONE)).subtract(BigDecimal.ONE);
     }
 
 }

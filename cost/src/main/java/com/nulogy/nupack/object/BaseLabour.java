@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class BaseLabour implements Labour {
 
     private static final long serialVersionUID = 1L;
-    private static final BigDecimal MARKUP = BigDecimal.valueOf(0.015);
+    protected static final BigDecimal MARKUP = BigDecimal.valueOf(0.05);
     
     private int numberOfPeople;
     
@@ -27,8 +27,13 @@ public class BaseLabour implements Labour {
     }
     
     @Override
+    public int getNumberOfPeople() {
+        return numberOfPeople;
+    }
+    
+    @Override
     public BigDecimal getMarkUp() {
-        return BigDecimal.valueOf(numberOfPeople).multiply(BigDecimal.valueOf(0.012)).add(MARKUP);
+        return BigDecimal.valueOf(numberOfPeople).multiply(BigDecimal.valueOf(0.012)).add(BigDecimal.ONE).multiply(MARKUP.add(BigDecimal.ONE)).subtract(BigDecimal.ONE);
     }
 
 }

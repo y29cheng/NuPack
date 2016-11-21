@@ -55,14 +55,14 @@ public class CostEstimationServiceImplSpringTest {
     
     @Test
     public void testEstimate() {
-        Assert.assertEquals(new BigDecimal("12.4845"), costEstimationService.estimate(BigDecimal.valueOf(12.3), baseLabour));
-        Assert.assertEquals(new BigDecimal("14.0835"), costEstimationService.estimate(BigDecimal.valueOf(12.3), foodLabour));
-        Assert.assertEquals(new BigDecimal("13.4070"), costEstimationService.estimate(BigDecimal.valueOf(12.3), pharmaceuticalLabour));
-        Assert.assertEquals(new BigDecimal("12.7305"), costEstimationService.estimate(BigDecimal.valueOf(12.3), electronicsLabour));
-        Assert.assertEquals(new BigDecimal("12.6321"), costEstimationService.estimate(BigDecimal.valueOf(12.3), baseLabour_1));
-        Assert.assertEquals(new BigDecimal("14.2311"), costEstimationService.estimate(BigDecimal.valueOf(12.3), foodLabour_1));
-        Assert.assertEquals(new BigDecimal("13.5546"), costEstimationService.estimate(BigDecimal.valueOf(12.3), pharmaceuticalLabour_1));
-        Assert.assertEquals(new BigDecimal("12.8781"), costEstimationService.estimate(BigDecimal.valueOf(12.3), electronicsLabour_1));
+        Assert.assertEquals(new BigDecimal("12.915000"), costEstimationService.estimate(BigDecimal.valueOf(12.3), baseLabour));
+        Assert.assertEquals(new BigDecimal("14.593950"), costEstimationService.estimate(BigDecimal.valueOf(12.3), foodLabour));
+        Assert.assertEquals(new BigDecimal("13.883625"), costEstimationService.estimate(BigDecimal.valueOf(12.3), pharmaceuticalLabour));
+        Assert.assertEquals(new BigDecimal("13.173300"), costEstimationService.estimate(BigDecimal.valueOf(12.3), electronicsLabour));
+        Assert.assertEquals(new BigDecimal("13.069980"), costEstimationService.estimate(BigDecimal.valueOf(12.3), baseLabour_1));
+        Assert.assertEquals(new BigDecimal("14.748930"), costEstimationService.estimate(BigDecimal.valueOf(12.3), foodLabour_1));
+        Assert.assertEquals(new BigDecimal("14.038605"), costEstimationService.estimate(BigDecimal.valueOf(12.3), pharmaceuticalLabour_1));
+        Assert.assertEquals(new BigDecimal("13.328280"), costEstimationService.estimate(BigDecimal.valueOf(12.3), electronicsLabour_1));
     }
     
 }

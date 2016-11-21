@@ -99,14 +99,14 @@ public class CostEstimationServiceImplTest {
         Labour l8 = new ElectronicsLabour(1);
         
         return new Object[][] {
-            { BigDecimal.valueOf(12.3), l1, new BigDecimal("12.4845") },
-            { BigDecimal.valueOf(12.3), l2, new BigDecimal("14.0835") },
-            { BigDecimal.valueOf(12.3), l3, new BigDecimal("13.4070") },
-            { BigDecimal.valueOf(12.3), l4, new BigDecimal("12.7305") },
-            { BigDecimal.valueOf(12.3), l5, new BigDecimal("12.6321") },
-            { BigDecimal.valueOf(12.3), l6, new BigDecimal("14.2311") },
-            { BigDecimal.valueOf(12.3), l7, new BigDecimal("13.5546") },
-            { BigDecimal.valueOf(12.3), l8, new BigDecimal("12.8781") }
+            { BigDecimal.valueOf(12.3), l1, new BigDecimal("12.915000") },
+            { BigDecimal.valueOf(12.3), l2, new BigDecimal("14.593950") },
+            { BigDecimal.valueOf(12.3), l3, new BigDecimal("13.883625") },
+            { BigDecimal.valueOf(12.3), l4, new BigDecimal("13.173300") },
+            { BigDecimal.valueOf(12.3), l5, new BigDecimal("13.069980") },
+            { BigDecimal.valueOf(12.3), l6, new BigDecimal("14.748930") },
+            { BigDecimal.valueOf(12.3), l7, new BigDecimal("14.038605") },
+            { BigDecimal.valueOf(12.3), l8, new BigDecimal("13.328280") }
         };
     }
 }
