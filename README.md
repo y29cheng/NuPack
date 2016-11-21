@@ -11,7 +11,7 @@ mvn install
 
 Dependency injection
 
-To use beans defined in NupackConfiguration.java
+To use beans defined in NupackConfig.java
 
 add the following the to your pom.xml
 
